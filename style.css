@@ -10,3 +10,50 @@
     box-sizing: border-box;
     font-family:'RobotoMono';
 }
+.hero{
+    padding: 20px 20px 0px 20px;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)), url(img/Fundo.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header img{
+    width: 100px;
+    height: auto;
+}
+header a{
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: bold;
+}
+header nav{
+    padding-left:170px ;
+    gap: 20px;
+}
+nav a{
+    border-bottom: 5px solid transparent;
+}
+nav a:hover{
+    color: var(--beje);
+    border-bottom: 5px solid var(--beje);
+}
+.logo a,.nav{
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    gap: 10px;
+}
+.logo img{
+    width: 100px;
+    height: 40000px;
+}
