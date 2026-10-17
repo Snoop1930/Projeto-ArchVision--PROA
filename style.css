@@ -156,7 +156,9 @@ nav a:hover {
     flex: 1;
 }
 
-.sobre-conteudo h2,p,ul {
+.sobre-conteudo h2,
+.sobre-conteudo p,
+.sobre-conteudo ul {
     color: var(--branco);
     margin-top: 10px;
 }
