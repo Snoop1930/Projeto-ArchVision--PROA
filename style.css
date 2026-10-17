@@ -77,7 +77,7 @@ nav a:hover {
     border-bottom: 5px solid #719bde;
 }
 
-/* --- HOME CONTENT --- */
+/* --- HOME --- */
 .h1-home-center {
     font-size: 65px;
 }
@@ -156,70 +156,11 @@ nav a:hover {
     flex: 1;
 }
 
-.sobre-conteudo h2,
-.sobre-conteudo p,
-.sobre-conteudo ul {
+.sobre-conteudo h2,p,ul {
     color: var(--branco);
-margin-top: 10px;
+    margin-top: 10px;
 }
 
 .sobre-conteudo h2 {
-text-align: center;
-}
-
-/* ==========================================
---- MEDIA QUERY (RESPONSIVIDADE) ---
-   ========================================== */
-@media (max-width: 768px) {
-  /* Adaptação do Header */
-header {
-    flex-direction: column; /* Coloca logo e menu um embaixo do outro */
-    gap: 20px;
     text-align: center;
-}
-
-.direita-header {
-    flex-direction: column; /* Alinha navegação e botões verticalmente */
-    gap: 20px;
-}
-
-nav {
-    flex-direction: column; /* Links do menu ficam em lista */
-    gap: 15px;
-}
-
-  /* Adaptação da Home */
-.h1-home-center {
-    font-size: 40px; /* Diminui o título para não quebrar a tela */
-    line-height: 45px;
-}
-
-.home {
-    align-items: center; /* Centraliza o conteúdo no mobile */
-    margin-top: 10vh;
-    text-align: center;
-}
-
-  /* Adaptação do Sobre */
-.sobre {
-    flex-direction: column; /* Coloca as imagens no topo e o texto embaixo */
-    align-items: center;
-    padding: 20px;
-}
-
-.sobre-img {
-    flex-direction: column; /* Se houver mais de uma imagem, empilha */
-    gap: 20px;
-}
-
-.sobre-img .img {
-    margin: 0; /* Remove as margens esquerdas e superiores fixas */
-    width: 100%; /* Faz a imagem ocupar a largura disponível */
-    max-width: 300px; /* Impede que ela fique gigante */
-    height: auto; /* Mantém a proporção */
-}
-
-.sobre-conteudo {
-    padding: 10px;
-    text-align: center; 
 }
