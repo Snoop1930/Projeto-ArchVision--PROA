@@ -1,157 +1,225 @@
-:root{
-    ---marrom: #B87333;
-    ---azul: #2D4263;
-    ---branco: #FFFFFF;
-    ---preto: #1C1C1C;
-    ---beje: #FFF5E1;
-    ---azul-escuro: #0C1C34;
+:root {
+    --marrom: #B87333;
+    --azul: #2D4263;
+    --branco: #FFFFFF;
+    --preto: #1C1C1C;
+    --beje: #FFF5E1;
+    --azul-escuro: #0C1C34;
 }
-*{
+
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family:'RobotoMono';
+    font-family: 'RobotoMono';
 }
-.hero{
-    padding: 20px 20px 0px 20px;
-}
-.hero{
+
+/* --- HERO --- */
+.hero {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to top,rgba(110, 109, 109, 0.5),rgba(0, 0, 0, 0.5)), url(img/Fundo.jpeg);
+    padding: 20px 20px 0 20px;
+    background: linear-gradient(to top, rgba(110, 109, 109, 0.5), rgba(0, 0, 0, 0.5)), url('img/Fundo.jpeg');
     background-position: center;
     background-size: cover;
 }
 
-header{
+/* --- HEADER & NAV --- */
+header {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
 
-header img{
+header img {
     width: 100px;
     height: auto;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: var(--branco);
     font-weight: bold;
 }
 
-.logo a,.direita-header,nav{
+.logo a,
+.direita-header,
+nav {
     display: flex;
     align-items: center;
 }
 
-nav{
+.logo a {
+    gap: 10px;
+}
+
+.logo h1 {
+    color: var(--branco);
+}
+
+.direita-header {
+    gap: 30px;
+}
+
+nav {
     gap: 40px;
 }
 
-nav a{
-    color: var(---branco);
+nav a {
+    color: var(--branco);
     border-bottom: 5px solid transparent;
+    transition: all 0.3s ease;
 }
 
-nav a:hover{
+nav a:hover {
     color: #719bde;
     border-bottom: 5px solid #719bde;
 }
 
-.logo a{
-    gap: 10px;
-}
-
-.direita-header{
-    gap: 30px;
-}
-
-.logo h1{
-    color: var(--branco);
-}
-
-
-.h1-home-center{
+/* --- HOME CONTENT --- */
+.h1-home-center {
     font-size: 65px;
 }
 
-.home{
+.home {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     margin-top: 20vh;
     gap: 10px;
 }
 
-.home .h1-home-center{
-    color: var(---beje);
+.home .h1-home-center {
+    color: var(--beje);
     line-height: 60px;
 }
-.btn-cadastro{
-    background-color: var(---azul-escuro);
+
+/* --- BUTTONS --- */
+.btn-cadastro {
+    background-color: var(--azul-escuro);
     color: var(--branco);
     border: none;
     border-radius: 10px;
     padding: 15px;
-}
-.btn-cadastro{
-    color: var(---branco);
-}
-.btn-cadastro:hover{
     cursor: pointer;
-    background-color:#719bde;
+    transition: background-color 0.3s ease;
 }
 
-.btn-login{
+.btn-cadastro:hover {
+    background-color: #719bde;
+}
+
+.btn-login {
     padding: 15px;
     background-color: transparent;
-    border: 1px solid #FFFFFF;
+    color: var(--branco);
+    border: 1px solid var(--branco);
     border-radius: 10px;
-}
-.btn-login{
-    color: var(---branco);
-}
-.btn-login:hover{
     cursor: pointer;
-    background-color:#719bde;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #719bde;
     color: var(--preto);
 }
-.sobre-img{
-    display: flex;
-    gap: 40px;
-}
-.sobre-img .img{
-    width: 280px;
-    height: 290px;
-    border-radius: 10px;
-    margin-top: 40px;
-    margin-left: 30px;
-}
-.sobre{
-    background-color: var(---azul-escuro);
-    padding-bottom: 40px;
-}
-.sobre-img .img{
-    border: 1px solid var(--branco);
-    border-radius: 10px; 
-}
-.sobre{
+
+/* --- SEÇÃO SOBRE --- */
+.sobre {
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    background-color: var(--azul-escuro);
+    padding-bottom: 40px;
 }
-.sobre-conteudo h2,p,ul{
-    color: var(---branco);
-    margin-top: 10px;
+
+.sobre-img {
+    display: flex;
+    gap: 40px;
 }
-.sobre-conteudo h2{
+
+.sobre-img .img {
+    width: 280px;
+    height: 290px;
+    margin-top: 40px;
+    margin-left: 30px;
+    border: 1px solid var(--branco);
+    border-radius: 10px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.sobre-conteudo h2,
+.sobre-conteudo p,
+.sobre-conteudo ul {
+    color: var(--branco);
+margin-top: 10px;
+}
+
+.sobre-conteudo h2 {
+text-align: center;
+}
+
+/* ==========================================
+--- MEDIA QUERY (RESPONSIVIDADE) ---
+   ========================================== */
+@media (max-width: 768px) {
+  /* Adaptação do Header */
+header {
+    flex-direction: column; /* Coloca logo e menu um embaixo do outro */
+    gap: 20px;
     text-align: center;
 }
-.sobre-conteudo{
-    display: flex;
-    flex-direction: column;    
-    justify-content: center;    
-    align-items: center;        
-    flex: 1;                    
+
+.direita-header {
+    flex-direction: column; /* Alinha navegação e botões verticalmente */
+    gap: 20px;
+}
+
+nav {
+    flex-direction: column; /* Links do menu ficam em lista */
+    gap: 15px;
+}
+
+  /* Adaptação da Home */
+.h1-home-center {
+    font-size: 40px; /* Diminui o título para não quebrar a tela */
+    line-height: 45px;
+}
+
+.home {
+    align-items: center; /* Centraliza o conteúdo no mobile */
+    margin-top: 10vh;
+    text-align: center;
+}
+
+  /* Adaptação do Sobre */
+.sobre {
+    flex-direction: column; /* Coloca as imagens no topo e o texto embaixo */
+    align-items: center;
+    padding: 20px;
+}
+
+.sobre-img {
+    flex-direction: column; /* Se houver mais de uma imagem, empilha */
+    gap: 20px;
+}
+
+.sobre-img .img {
+    margin: 0; /* Remove as margens esquerdas e superiores fixas */
+    width: 100%; /* Faz a imagem ocupar a largura disponível */
+    max-width: 300px; /* Impede que ela fique gigante */
+    height: auto; /* Mantém a proporção */
+}
+
+.sobre-conteudo {
+    padding: 10px;
+    text-align: center; 
 }
