@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'RobotoMono';
+    font-family: 'Inter';
 }
 
 /* --- HERO --- */
@@ -41,6 +41,7 @@ header a {
     text-decoration: none;
     color: var(--branco);
     font-weight: bold;
+    font-size: 22px;
 }
 
 .logo a,
@@ -80,6 +81,7 @@ nav a:hover {
 /* --- HOME --- */
 .h1-home-center {
     font-size: 65px;
+    font-weight: 500;
 }
 
 .home {
@@ -96,7 +98,7 @@ nav a:hover {
 }
 
 /* --- BUTTONS --- */
-.btn-cadastro {
+.btn-cadastro,.btn-assinar {
     background-color: var(--azul-escuro);
     color: var(--branco);
     border: none;
@@ -106,7 +108,7 @@ nav a:hover {
     transition: background-color 0.3s ease;
 }
 
-.btn-cadastro:hover {
+.btn-cadastro:hover,.btn-assinar:hover {
     background-color: #719bde;
 }
 
@@ -140,8 +142,8 @@ nav a:hover {
 }
 
 .sobre-img .img {
-    width: 280px;
-    height: 290px;
+    width: 330px;
+    height: 405px;
     margin-top: 40px;
     margin-left: 30px;
     border: 1px solid var(--branco);
@@ -156,6 +158,10 @@ nav a:hover {
     flex: 1;
 }
 
+.sobre-conteudo p, ul li{
+    font-size: 24px;
+}
+
 .sobre-conteudo h2,
 .sobre-conteudo p,
 .sobre-conteudo ul {
@@ -164,5 +170,146 @@ nav a:hover {
 }
 
 .sobre-conteudo h2 {
+    font-size: 35px;
     text-align: center;
+}
+
+.sobre-conteudo{
+    width: 500px;   
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;  
+}
+
+.lista-projetos{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.projetos img{
+    width: 100%;
+    height: 105px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.projeto{
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.projeto h3, p{
+    padding: 20px 30px 0 30px;
+}
+
+.secao-titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secao-titulo a{
+    text-decoration: none;
+    color: black;
+}
+
+.secao-titulo h2{
+    font-size: 30px;
+    color: #2D4263;
+    border-left: 8px solid #2D4263;
+    padding-left: 0.5rem;
+    border-radius: 3px;
+}
+
+.sustentabilidade-conteudo{
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;;
+}
+
+.sustentabilidade{
+    background-color: #0C1C34;
+    padding: 20px 20px 0 20px;
+}
+
+.material img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid #B87333;
+}
+
+.sustentabilidade h2{
+    font-size: 30px;
+    color: white;
+    place-self: center;
+}
+
+.sustentabilidade-conteudo,.material{
+    display: flex;
+}
+
+.material-textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    font-weight: bold;
+}
+
+.indicador img{
+    width: 300px;
+    height: 300px;
+}
+
+.beneficios{
+    color: white;
+}
+
+.beneficios h3{
+    font-size: 25px;
+}
+
+.beneficios p{
+    font-size: 21px;
+}
+
+.blog{
+    background-color: #FFF5E1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+}
+
+.blog-direita input{
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.newsletter-texto{
+    font-size: 20px;
+    color: #1C1C1C;
+}
+
+.blog-esquerda{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    display: flex;
 }
