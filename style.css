@@ -178,6 +178,7 @@ nav a:hover {
     width: 500px;   
 }
 
+/* --- SEÇÃO PROJETOS --- */
 .projetos{
     display: flex;
     flex-direction: column;
@@ -231,6 +232,7 @@ nav a:hover {
     border-radius: 3px;
 }
 
+/* --- SUSTENTABILIDADE --- */
 .sustentabilidade-conteudo{
     align-items: center;
     justify-content: space-between;
@@ -285,12 +287,13 @@ nav a:hover {
     font-size: 21px;
 }
 
+/* --- BLOG --- */
 .blog{
     background-color: #FFF5E1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 25px 20px;
 }
 
 .blog-direita input{
@@ -310,6 +313,106 @@ nav a:hover {
     align-items: center;
 }
 
-footer{
+/* --- RODAPÉ --- */
+.rodape{
     display: flex;
+    gap: 40px;
+    color: var(--beje);
+    padding: 20px 20px 0 20px;
+    justify-content: space-between;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center
+}
+
+.rodape-links ul{
+    margin-top: 10px;
+    list-style-type: none;
+} 
+
+.rodape-links{
+    text-align: center;
+}
+
+.rodape-links a{
+    color: var(--beje);
+}
+
+.rodape-links a:hover{
+    color: #719bde;
+}
+
+.rodape-servicos{
+    text-align: center;
+}
+
+.rodape-servicos ul{
+    margin-top: 10px;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.rodape-servicos a:hover{
+    color: #719bde;
+}
+
+.rodape-servicos a{
+    color: var(--beje);
+}
+
+.fa-instagram,.fa-facebook,.fa-envelope,.fa-phone,.fa-location-dot{
+    width: 30px;
+    height: 30px;
+}
+
+.fa-instagram:hover{
+    color: #719bde;
+}
+
+.fa-facebook:hover{
+    color: #719bde;
+}
+
+.fa-envelope:hover{
+    color: #719bde;
+}
+
+.rodape-empresa{
+    text-align: center;
+}
+
+.rodape-email a{
+    color: var(--beje);
+}
+
+.rodape-email{
+    margin-bottom: 15px;
+} 
+
+.fa-phone{
+    color: var(--beje);
+}
+
+.rodape,.direitos{
+    background-color: var(--azul-escuro);
+}
+
+.direitos{
+    color: var(--beje);
+}
+
+.newsletter-icone a{
+    color: var(--beje);
+}
+
+.redes-sociais{
+    gap: 15px;               
+}
+
+.rodape-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
